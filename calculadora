@@ -54,5 +54,28 @@ class Testes (TestCase):
 
   def test_soma(self):
   calculador = Calculadora()
-  result = calculador.calcular(5,6, "soma")
-  self.assertEqual(result, 11)
+  result = calculador.calcular(4,2, "soma")
+  self.assertEqual(result, 6)
+  
+  def test_multiplicacao(self):
+  calculador = Calculadora()
+  result = calculador.calcular(4,2, "multiplicacao")
+  self.assertEqual(result, 8)
+  
+  def test_divisao(self):
+  calculador = Calculadora()
+  result = calculador.calcular(4,2, "divisao")
+  self.assertEqual(result, 2)
+  
+  def test_subtracao(self):
+  calculador = Calculadora()
+  result = calculador.calcular(4,2, "subtracao")
+  self.assertEqual(result, 2)
+  
+calculador = Calculadora()
+NumeroCalculado = calculador.calcular(4,2 "soma")
+print(NumeroCalculado)
+
+if __name__ == '__main__':
+  main()
+  
