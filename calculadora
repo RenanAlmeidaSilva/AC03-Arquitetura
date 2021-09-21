@@ -4,15 +4,15 @@ from unittest import TestCase, main
 class Calculadora (object):
 
   def calcular(self, n1, n2, operador):
-  operacaoFab = OperacaoFab()
-  operacao = operacaoFab.criar(operador)
+  operacaoFabrica = OperacaoFabrica()
+  operacao = operacaoFabrica.criar(operador)
   if (operacao == None):
     return 0
   else:
     resultado = operacao.executar(n1,n2)
     return resultado
 
-class OperacaoFab(object):
+class OperacaoFabrica(object):
 
   def criar(self, operador):
     if (operador == "soma"):
